@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Starter</title>
+  
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <%= stylesheet_link_tag    "blueprint/screen" %>    
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%#= javascript_include_tag  "jquery.dimensions.min" %>
+  <%#= javascript_include_tag "jquery.colorbox-min.js" %>
+
+
+  <!--[if lt IE 9]><%= stylesheet_link_tag "blueprint/ie" %><![endif]-->
+
+  <!--[if lt IE 9]><%= stylesheet_link_tag "menufix_ie" %><![endif]-->
+  <!--[if lte IE 7]><%= stylesheet_link_tag "menufix_ie7" %><![endif]-->
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

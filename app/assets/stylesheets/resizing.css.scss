@@ -1,0 +1,91 @@
+
+@import "./partials/font_families";
+/* ======================================================================= */
+/* ! Layout for desktop version   */
+/* ======================================================================= */
+body {
+
+}
+
+/* ======================================================================= */
+/* ! Layout for desktop version   */
+/*       1200 and smaller screens          */
+/* ======================================================================= */
+
+@media only screen and (max-width: 1200px) {
+
+  body {
+    
+}
+
+/* ======================================================================= */
+/* ! Layout for desktop version   */
+/*       1068 and smaller screens          */
+/* ======================================================================= */
+
+/*@media only screen and (max-width: 1068px) {*/
+
+/*  body {
+    .bodyText {
+      @include body_text(0.865em); 
+
+    }
+  }
+}*/
+
+/* ======================================================================= */
+/* ! Layout for desktop version   */
+/*       Smaller screens          */
+/* ======================================================================= */
+
+@media only screen and (max-width: 1023px) {
+
+  body {
+    
+}
+
+/* ======================================================================= */
+/* ! Layout for desktop version   */
+/*       Even Smaller screens          */
+/* ======================================================================= */
+@media only screen and (max-width: 900px) {
+
+  body {
+    
+}
+
+/* ======================================================================= */
+/* ! Layout for mobile version   */
+/* ======================================================================= */
+
+@media handheld, only screen and (max-width: 767px) {
+  body {
+    
+}
+
+
+
+/* ======================================================================= */
+/* ! Provide higher res assets for iPhone 4   */
+/* ======================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+  
+/*  body {
+    .headerContainer{
+      @include title_text(0.8em);
+
+      .sevencol{
+        padding-top: 0;
+        text-align: left;
+        min-width: 0;
+      }
+    }
+  }*/
+
+  /*	.logo {
+          background: url(logo2x.jpg) no-repeat;
+          background-size: 212px 303px;
+      }*/
+
+}

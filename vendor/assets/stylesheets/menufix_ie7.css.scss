@@ -1,0 +1,14 @@
+.container{
+  display:block;
+/*  background: blue;*/
+}
+#containerHeader{
+  height: auto;
+/*  background: pink;*/
+}
+
+@media handheld, only screen and (max-width: 767px) {
+.sticker{
+  display: none;
+}
+}

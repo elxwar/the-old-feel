@@ -1,0 +1,55 @@
+/*variables defining font-stacks*/
+
+$georgia: Georgia,Utopia,Palatino,'Palatino Linotype',Times, "Times New Roman",serif;
+$tahoma: Arial,FreeSans,Helvetica,sans-serif;
+
+@mixin title_text($size: 1em) {
+  font-family: 'SpecialEliteRegular';
+  font-size: $size;
+  font-style: normal;
+  font-weight: 100;
+  color: black;
+  
+}
+
+@mixin body_text($size: 1em) {
+  font-family: 'SpecialEliteRegular';
+  font-size: $size;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  
+}
+
+@font-face {
+    font-family: 'LatinModernMonoLight10Bold';
+    src: font-url('lmmonolt10-bold-webfont.eot');
+    src: font-url('lmmonolt10-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('lmmonolt10-bold-webfont.woff') format('woff'),
+         font-url('lmmonolt10-bold-webfont.ttf') format('truetype'),
+         font-url('lmmonolt10-bold-webfont.svg#LatinModernMonoLight10Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'SpecialEliteRegular';
+    src: font-url('SpecialElite-webfont.eot');
+    src: font-url('SpecialElite-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('SpecialElite-webfont.woff') format('woff'),
+         font-url('SpecialElite-webfont.ttf') format('truetype'),
+         font-url('SpecialElite-webfont.svg#SpecialEliteRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin script_text($size: 1em) {
+  font-family: 'Conv_DakotaRegular', sans-serif;
+  font-size: $size;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+}
