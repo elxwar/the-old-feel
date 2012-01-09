@@ -1,4 +1,24 @@
 Starter::Application.routes.draw do
+  get "pages/about"
+
+  get "pages/the_founder"
+
+  get "pages/the_cost"
+
+  get "pages/web_services"
+
+  get "pages/consultancy_services"
+
+  get "pages/photography"
+
+  get "pages/web_portfolio"
+
+  get "pages/photo_portfolio"
+
+  get "pages/contact"
+
+  get "pages/links"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
