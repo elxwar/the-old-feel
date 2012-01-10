@@ -17,4 +17,14 @@
 %body
   - flash.each do |name, msg|
     = content_tag :div, msg, :id => "flash_#{name}" if msg.is a?(String)
-  = yield
+  
+  #main_wrapper.container
+    .row
+      .twocol
+        = image_tag 'logos/the-feel-web-logo1.png'
+      .tencol.last
+        %h1 the-feel web design, IT consultancy and photography
+    .row
+      .twocol
+      .tencol.last
+        = yield

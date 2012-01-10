@@ -1,0 +1,28 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require fancybox
+ *= require_tree . 
+*/
+
+
+/*
+TODO customize this sample style
+Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+*/
+
+@import "./partials/font_families";
+
+body{
+  background-image: url('the-feel-large-background.jpg');
+  #main_wrapper{
+    padding-top:2.5em;
+  }
+  h1{
+    @include title_text(2.4em);
+    text-align: left;
+  }
+  @include body_text(0.8em);
+}

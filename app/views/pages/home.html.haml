@@ -1,0 +1,45 @@
+/%h1 Pages#home
+/%p Find me somewhere
+/%p
+/  = home_path 
+/  again
+
+.home_wrapper
+  .small_images#home_small_images
+    = image_tag 'logos/the-feel-web-logo0.png', :alt => '1', :style => "display:block;"
+    = image_tag 'logos/the-feel-web-logo1.png', :alt => '2'
+    = image_tag 'logos/the-feel-web-logo2.png', :alt => '3'
+  
+  .circleBig
+    #menu.menu
+      = link_to 'about', '', :class => 'about', :id => 'about' 
+      = link_to 'services', '', :class => 'services', :id => 'services'
+      = link_to 'portfolio', '', :class => 'portfolio', :id => 'portfolio'
+      = link_to 'contact', '', :class => 'contact', :id => 'contact'
+
+.small_circle#circle_about
+  .description
+    %ul
+      %li= link_to 'the-feel', "#"
+      %li= link_to 'the-founder', "#"
+      %li= link_to 'the-cost', "#"
+
+.small_circle#circle_services
+  .description
+    %ul
+      %li= link_to 'web', "#"
+      %li= link_to 'consultancy', "#"
+      %li= link_to 'photography', "#"
+
+.small_circle#circle_portfolio
+  .description
+    %ul
+      %li= link_to 'web sites', "#"
+      %li= link_to 'photography', "#"
+
+.small_circle#circle_contact
+  .description
+    %ul
+      %li= link_to 'the-feel', "#"
+      %li= link_to 'other sites', "#"
+      %li= link_to 'links', "#"
