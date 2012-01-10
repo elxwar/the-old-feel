@@ -28,8 +28,8 @@
     position:absolute;
     width:101px;
     height:74px;
-    top:240px;
-    left:260px;
+    top:232px;
+    left:320px;
     z-index:999;
   }
   a.about, a.services, a.portfolio, a.contact{
@@ -37,7 +37,30 @@
     clear:both;
     height:23px;
     margin-bottom:10px;
-    width:105px;
+    width:79px;
+    text-indent:-2000000px;
+    opacity:0.7;
+    background:transparent url('menu_titles.png') no-repeat top left;
     
+  } 
+  
+  a.services{
+    width:105px;
+    margin-left:-44px;
+    background-position: -75px 0px;
   }
+  
+  a.portfolio{
+    width:115px;
+    margin-left:-65px;
+    background-position: -190px 0px;
+  }
+  
+  a.contact{
+    width:90px;
+    margin-left:-85px;
+    background-position: -307px 0px;
+  }
+  
+  a.about:hover, a.services:hover, a.portfolio:hover, a.contact:hover{opacity:1.0;}
 }
