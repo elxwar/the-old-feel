@@ -1,12 +1,14 @@
+#home_row{overflow:visible;}
+h1{padding-top:2em;}
 .home_wrapper{
   font-size: 11px;
   width:600px;
   height:600px;
   position:relative;
-  top:150px;
-  left:200px;
+  top:-10px;
+  left:120px;
   
-  .small_images{
+  .images{
     img{
       display:none;
       position:absolute;
@@ -17,11 +19,11 @@
   
   .circleBig{
     position:absolute;
-    top:0px;
-    left:0px;
-    width:418px;
-    height:418px;
-    background:transparent url('lrg_eric.png') no-repeat top left;
+    top:6px;
+    left:6px;
+    width:420px;
+    height:420px;
+    background:transparent url('ringbg.png') no-repeat top left;
   }
   
   .menu{
@@ -41,7 +43,7 @@
     text-indent:-2000000px;
     opacity:0.7;
     background:transparent url('menu_titles.png') no-repeat top left;
-    
+    &:hover{opacity:1.0;}
   } 
   
   a.services{
@@ -61,6 +63,36 @@
     margin-left:-85px;
     background-position: -307px 0px;
   }
-  
-  a.about:hover, a.services:hover, a.portfolio:hover, a.contact:hover{opacity:1.0;}
+}
+.small_circle{
+  margin-top:-88px;
+  margin-left:-88px;
+  width:180px;
+  height:180px;
+  position:absolute;
+  left:0;
+  top:0;
+  background:transparent url('ring.png') no-repeat top left;
+  z-index:10;
+  opacity:0;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  .description{
+    width:120px;
+    margin:40px auto;
+    text-align:center;
+    ul{
+      list-style:none;
+      a{
+        line-height:30px;
+        font-weight:bold;
+        color:#f5f5f5;
+        text-decoration:none;
+        opacity:0.8;
+        text-transform:lowercase;
+        font-size:11px;
+        text-shadow:1px 1px 1px #aaa;
+        &:hover{color:#f0f0f0; opacity:1;}
+      }
+    }
+  }
 }

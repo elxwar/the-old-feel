@@ -16,9 +16,10 @@ Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 @import "./partials/font_families";
 
 body{
-  background-image: url('the-feel-large-background.jpg');
+  background-color:#222;
+/*  background-image: url('the-feel-large-background.jpg');*/
   #main_wrapper{
-    padding-top:2.5em;
+/*    padding-top:2.5em;*/
   }
   h1{
     @include title_text(2.4em);
