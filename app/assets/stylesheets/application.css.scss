@@ -16,14 +16,16 @@ Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 @import "./partials/font_families";
 
 body{
+  @include body_text;
   background-color:#222;
 /*  background-image: url('the-feel-large-background.jpg');*/
   #main_wrapper{
 /*    padding-top:2.5em;*/
   }
   h1{
-    @include title_text(2.4em);
+    @include title_text;
     text-align: left;
   }
-  @include body_text(0.8em);
+  .bubble{opacity:0.1;}
+  
 }

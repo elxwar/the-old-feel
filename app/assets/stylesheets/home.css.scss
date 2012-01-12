@@ -1,97 +1,104 @@
-#home_row{overflow:visible;}
-h1{padding-top:2em;}
-.home_wrapper{
-  font-size: 11px;
-  width:600px;
-  height:600px;
-  position:relative;
-  top:-10px;
-  left:120px;
-  
-  .images{
-    img{
-      display:none;
+body{
+  #home_row{overflow:visible;}
+  h1{padding-top:2em;text-align:center;}
+  #home_intro{
+    font-size:0.9em;
+    margin-top:-80px;
+    text-align:center;
+  }
+  .home_wrapper{
+    font-size: 0.8em;
+    width:600px;
+    height:600px;
+    position:relative;
+    top:-10px;
+    left:120px;
+
+    .images{
+      img{
+        display:none;
+        position:absolute;
+        left:6px;
+        top:6px;
+      }
+    }
+
+    .circleBig{
       position:absolute;
-      left:6px;
       top:6px;
+      left:6px;
+      width:420px;
+      height:420px;
+      background:transparent url('ringbg.png') no-repeat top left;
+    }
+
+    .menu{
+      position:absolute;
+      width:101px;
+      height:74px;
+      top:232px;
+      left:320px;
+      z-index:999;
+    }
+    a.about, a.services, a.portfolio, a.contact{
+      float:left;
+      clear:both;
+      height:23px;
+      margin-bottom:10px;
+      width:79px;
+      text-indent:-2000000px;
+      opacity:0.7;
+      background:transparent url('menu_titles.png') no-repeat top left;
+      &:hover{opacity:1.0;}
+    } 
+
+    a.services{
+      width:105px;
+      margin-left:-44px;
+      background-position: -75px 0px;
+    }
+
+    a.portfolio{
+      width:115px;
+      margin-left:-65px;
+      background-position: -190px 0px;
+    }
+
+    a.contact{
+      width:90px;
+      margin-left:-85px;
+      background-position: -307px 0px;
     }
   }
-  
-  .circleBig{
+  .small_circle{
+    margin-top:-88px;
+    margin-left:-88px;
+    width:180px;
+    height:180px;
     position:absolute;
-    top:6px;
-    left:6px;
-    width:420px;
-    height:420px;
-    background:transparent url('ringbg.png') no-repeat top left;
-  }
-  
-  .menu{
-    position:absolute;
-    width:101px;
-    height:74px;
-    top:232px;
-    left:320px;
-    z-index:999;
-  }
-  a.about, a.services, a.portfolio, a.contact{
-    float:left;
-    clear:both;
-    height:23px;
-    margin-bottom:10px;
-    width:79px;
-    text-indent:-2000000px;
-    opacity:0.7;
-    background:transparent url('menu_titles.png') no-repeat top left;
-    &:hover{opacity:1.0;}
-  } 
-  
-  a.services{
-    width:105px;
-    margin-left:-44px;
-    background-position: -75px 0px;
-  }
-  
-  a.portfolio{
-    width:115px;
-    margin-left:-65px;
-    background-position: -190px 0px;
-  }
-  
-  a.contact{
-    width:90px;
-    margin-left:-85px;
-    background-position: -307px 0px;
-  }
-}
-.small_circle{
-  margin-top:-88px;
-  margin-left:-88px;
-  width:180px;
-  height:180px;
-  position:absolute;
-  left:0;
-  top:0;
-  background:transparent url('ring.png') no-repeat top left;
-  z-index:10;
-  opacity:0;
-  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-  .description{
-    width:120px;
-    margin:40px auto;
-    text-align:center;
-    ul{
-      list-style:none;
-      a{
-        line-height:30px;
-        font-weight:bold;
-        color:#f5f5f5;
-        text-decoration:none;
-        opacity:0.8;
-        text-transform:lowercase;
-        font-size:11px;
-        text-shadow:1px 1px 1px #aaa;
-        &:hover{color:#f0f0f0; opacity:1;}
+    left:0;
+    top:0;
+    background:transparent url('ring.png') no-repeat top left;
+    z-index:10;
+    opacity:0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    .description{
+      width:120px;
+      margin:40px auto;
+      text-align:center;
+      ul{
+        list-style:none;
+        a{
+          line-height:30px;
+          font-weight:bold;
+          color:#f5f5f5;
+          text-decoration:none;
+          opacity:0.8;
+          text-transform:lowercase;
+/*          font-size:11px;*/
+          text-shadow:1px 1px 1px #aaa;
+          &:hover{color:#f0f0f0; opacity:1;}
+        }
       }
     }
   }
