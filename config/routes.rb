@@ -3,6 +3,8 @@ Starter::Application.routes.draw do
   match 'home' => 'pages#home'
   
   match 'about' => 'pages#about'
+  
+  match 'contact' => 'pages#contact'
 
   get "pages/the_founder"
 
@@ -18,7 +20,7 @@ Starter::Application.routes.draw do
 
   get "pages/photo_portfolio"
 
-  get "pages/contact"
+#  get "pages/contact"
 
   get "pages/links"
 

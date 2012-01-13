@@ -19,13 +19,58 @@ body{
   @include body_text;
   background-color:#222;
 /*  background-image: url('the-feel-large-background.jpg');*/
-  #main_wrapper{
-/*    padding-top:2.5em;*/
-  }
+
   h1{
     @include title_text;
     text-align: left;
   }
   .bubble{opacity:0.1;}
+  
+  .bmenu{
+    $t_time:0.6s;
+    $t_scalea:0.8;
+    $t_scaleb:1;
+    padding:2em 0 0 0;
+    margin: 0 0 10px 10px;
+    position:relative;
+    &:hover{
+      li{a{text-shadow: 0px 0px 6px #fff;}}
+    }
+    li{
+      @include title_text(2em,400);
+      display:block;
+      a{
+        white-space:no-wrap;
+        text-decoration:none;
+        color:transparent;
+        display:block;
+        text-align:center;
+        text-shadow:0px 0px 3px #fff;
+        letter-spacing: 1px;
+        -moz-transform: scale($t_scalea);
+        -ms-transform: scale($t_scalea);
+        -o-transform: scale($t_scalea);
+        -webkit-transform: scale($t_scalea);
+        transform: scale($t_scalea);
+        -webkit-transition: all $t_time ease-in-out;
+        -moz-transition: all $t_time ease-in-out;
+        -o-transition: all $t_time ease-in-out;
+        -ms-transition: all $t_time ease-in-out;
+        transition: all $t_time ease-in-out;
+        &:hover{
+          color:#fff;
+          text-shadow: 0px 0px 1px #fff;
+/*          padding-left: 10px;*/
+          -moz-transform: scale($t_scaleb);
+          -ms-transform: scale($t_scaleb);
+          -o-transform: scale($t_scaleb);
+          -webkit-transform: scale($t_scaleb);
+          transform: scale($t_scaleb);
+        }
+      }
+    }
+    
+  }
+ 
   
 }
