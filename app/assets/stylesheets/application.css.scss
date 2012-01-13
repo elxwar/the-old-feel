@@ -33,13 +33,12 @@ body{
     padding:2em 0 0 0;
     margin: 0 0 10px 10px;
     position:relative;
-    &:hover{
-      li{a{text-shadow: 0px 0px 6px #fff;}}
-    }
+    &:hover li a{text-shadow: 0px 0px 6px #fff;}
+    .highlit a{color:#f5f5f5;}
     li{
       @include title_text(2em,400);
       display:block;
-      a{
+      a {
         white-space:no-wrap;
         text-decoration:none;
         color:transparent;
@@ -69,7 +68,8 @@ body{
         }
       }
     }
-    
+    .submenu{font-size:1.2em;}
+
   }
  
   

@@ -28,7 +28,11 @@
           %nav
             %ul.bmenu
               %li= link_to 'home', home_path
-              %li= link_to 'about', about_path
+              .headera
+                %li= link_to 'about', #
+                %li.submenu= link_to 'about the-feel', about_path
+                %li.submenu= link_to 'about the-founder', about_path
+                %li.submenu= link_to 'about the-costs', about_path
               %li= link_to 'services', home_path
               %li= link_to 'portfolio', home_path 
               %li= link_to 'concepts', home_path

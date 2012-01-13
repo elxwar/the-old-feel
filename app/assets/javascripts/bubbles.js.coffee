@@ -41,6 +41,6 @@ $(document).ready ->
     gravity: -100
     imgSource: 'assets/smile-2bw.png'
   )
-#  SoapBubbleMachineNumber1.addBubbles 5
-#  SoapBubbleMachineNumber2.addBubbles 10
-#  SoapBubbleMachineNumber3.addBubbles 8
+  SoapBubbleMachineNumber1.addBubbles 5
+  SoapBubbleMachineNumber2.addBubbles 10
+  SoapBubbleMachineNumber3.addBubbles 8
