@@ -1,14 +1,15 @@
+-# coding: UTF-8
 !!!
 %html
   %head
     %title the-feel: web design, IT consultancy and photography
     %meta(name="description" content="a description")
     %meta(name="author" content="the-feel : Eric Waring")
-    %meta(name="copyright" content="Copyright the-feel #{Time.now.year}. All rights reserved.")
+    /%meta(name="copyright" content="Copyright the-feel #{Time.now.year}. All rights reserved.")
 
     = stylesheet_link_tag "blueprint/screen"
     = stylesheet_link_tag :application
-    = javascript_include_tag :application, :media => 'all'
+    = javascript_include_tag :application
     /[if lt IE 9]
       = stylesheet_link_tag "blueprint/ie"
       = stylesheet_link_tag "menufix_ie"

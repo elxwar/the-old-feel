@@ -3,7 +3,7 @@ $(document).ready ->
   #$origcolor = $('.header a').css("color")
   #console.log($('.bmenu:hover').css("color"))
   $('.headera').hoverIntent (->
-    console.log(this.className)
+    #console.log(this.className)
     $(this).addClass('highlit')
     #$('.headera a').css("color",'#f5f5f5')
     #console.log($('.headera a').css("color"))

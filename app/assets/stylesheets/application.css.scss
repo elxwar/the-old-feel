@@ -19,7 +19,7 @@ body{
   @include body_text;
   background-color:#222;
 /*  background-image: url('the-feel-large-background.jpg');*/
-
+  nav{display:block;}
   h1{
     @include title_text;
     text-align: left;
