@@ -15,8 +15,10 @@
     /[if lt IE 9]
       = stylesheet_link_tag "blueprint/ie"
       = stylesheet_link_tag "menufix_ie"
+      
     /[if lt IE 10]
-      = stylesheet_link_tag "ie_menublur"
+      /= stylesheet_link_tag "ie_menublur"
+      /%script(src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js")
     = csrf_meta_tags
 
   %body

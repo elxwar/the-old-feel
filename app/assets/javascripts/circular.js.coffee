@@ -27,7 +27,7 @@ $ ->
             dir: -1
           )
           opacity: "0"
-        , 1800
+        , 3000
       else
         $theCircle.stop().animate
           opacity: "0"
@@ -52,6 +52,6 @@ $ ->
   move $("#about"), 2000, 2
   $("#menu > a").mouseover ->
     $this = $(this)
-    move $this, 800, 1
+    move $this, 600, 1
     
   

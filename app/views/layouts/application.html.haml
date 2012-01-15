@@ -16,14 +16,13 @@
       = stylesheet_link_tag "blueprint/ie"
       = stylesheet_link_tag "menufix_ie"
     /[if lt IE 10]
-      = stylesheet_link_tag "ie_menublur"
+      /= stylesheet_link_tag "ie_menublur"
 
     = csrf_meta_tags
 
   %body
     - flash.each do |name, msg|
       = content_tag :div, msg, :id => "flash_#{name}" if msg.is a?(String)
-
     #the_wrapper.container
       .row
         .twocol#sidebar
@@ -34,7 +33,7 @@
             %ul.headera
               %li= link_to 'about', #
               %li.submenu= link_to 'about the-feel', about_path
-              %li.submenu= link_to 'about the-founder', about_path
+              %li.submenu= link_to 'about the-founder', contact_path
               %li.submenu= link_to 'about the-costs', about_path
             %ul
               %li= link_to 'services', home_path
