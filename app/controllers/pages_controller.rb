@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    render :layout => 'home_layout'
+#    render :layout => 'home_layout'
   end
   
   def about

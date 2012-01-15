@@ -10,11 +10,13 @@
     = stylesheet_link_tag "blueprint/screen"
     = stylesheet_link_tag :application
     = javascript_include_tag :application
+    /[if lte IE 7]
+      = stylesheet_link_tag "menufix_ie7"
     /[if lt IE 9]
       = stylesheet_link_tag "blueprint/ie"
       = stylesheet_link_tag "menufix_ie"
-    /[if lte IE 7]
-      = stylesheet_link_tag "menufix_ie7"
+    /[if lt IE 10]
+      = stylesheet_link_tag "ie_menublur"
     = csrf_meta_tags
 
   %body

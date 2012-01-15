@@ -59,10 +59,11 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
+    modernizr-rails (2.0.6)
     multi_json (1.0.4)
     mysql2 (0.3.11)
     nokogiri (1.5.0)
-    paperclip (2.4.5)
+    paperclip (2.5.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
       cocaine (>= 0.0.2)
@@ -128,7 +129,7 @@ GEM
     turn (0.8.3)
       ansi
     tzinfo (0.3.31)
-    uglifier (1.2.1)
+    uglifier (1.2.2)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
     webrat (0.7.3)
@@ -146,6 +147,7 @@ DEPENDENCIES
   fancybox-rails
   haml
   jquery-rails
+  modernizr-rails
   mysql2
   paperclip (~> 2.4)
   rails (= 3.1.3)

@@ -1,0 +1,49 @@
+/%h1 Pages#home
+/%p Find me somewhere
+/%p
+/  = home_path 
+/  again
+.home_wrapper
+  .images#images
+    = image_tag 'lrg_eric.png', :alt => '1', :id => "image_about", :style => "display:block;"
+    = image_tag 'lrg_mat.png', :id => "image_services", :alt => '2'
+    = image_tag 'lrg_the-feel-logo.png', :id => "image_portfolio", :alt => '3'
+  
+  .circleBig
+    #menu.menu
+      = link_to 'about', '', :class => 'about', :id => 'about' 
+      = link_to 'services', '', :class => 'services', :id => 'services'
+      = link_to 'portfolio', '', :class => 'portfolio', :id => 'portfolio'
+      = link_to 'contact', '', :class => 'contact', :id => 'contact'
+
+  .small_circle#circle_about
+    .description
+      %ul
+        %li= link_to 'the-feel', about_path
+        %li= link_to 'the-founder', "#"
+        %li= link_to 'the-cost', "#"
+
+  .small_circle#circle_services
+    .description
+      %ul
+        %li= link_to 'web', "#"
+        %li= link_to 'consultancy', "#"
+        %li= link_to 'photography', "#"
+
+  .small_circle#circle_portfolio
+    .description
+      %ul
+        %li= link_to 'web sites', "#"
+        %li= link_to 'photography', "#"
+
+  .small_circle#circle_contact
+    .description
+      %ul
+        %li= link_to 'the-feel', "#"
+        %li= link_to 'other sites', "#"
+        %li= link_to 'links', "#"
+
+#home_intro
+  the-feel offer high quality, bespoke web design, IT consultancy, data services and photography for small businesses. Your one-stop shop for all your IT needs! 
+  <br /><br />
+  click on the links in the circles to find out more

@@ -4,6 +4,7 @@ gem 'rails', '3.1.3'
 gem 'rake'
 gem 'execjs'
 gem 'paperclip', '~> 2.4'
+gem 'modernizr-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

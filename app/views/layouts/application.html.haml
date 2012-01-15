@@ -1,6 +1,6 @@
 -# coding: UTF-8
 !!!
-%html
+%html.no-js
   %head
     %title the-feel: web design, IT consultancy and photography
     %meta(name="description" content="a description")
@@ -10,20 +10,20 @@
     = stylesheet_link_tag "blueprint/screen"
     = stylesheet_link_tag :application
     = javascript_include_tag :application
-    /[if IE]
-      = stylesheet_link_tag "ie_menublur"
     /[if lte IE 7]
       = stylesheet_link_tag "menufix_ie7"
     /[if lt IE 9]
       = stylesheet_link_tag "blueprint/ie"
       = stylesheet_link_tag "menufix_ie"
-    /[if lt IE 9]
-      %script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
+    /[if lt IE 10]
+      = stylesheet_link_tag "ie_menublur"
+
     = csrf_meta_tags
 
   %body
     - flash.each do |name, msg|
       = content_tag :div, msg, :id => "flash_#{name}" if msg.is a?(String)
+
     #the_wrapper.container
       .row
         .twocol#sidebar
