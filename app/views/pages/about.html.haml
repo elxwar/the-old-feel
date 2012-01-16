@@ -1,2 +1,30 @@
-%header 
-  %h1 the-feel web design, IT consultancy and photography
+.row
+  .twelvecol.last
+    %header
+      %h1 About the-feel
+.row#home_row
+  .twelvecol.last
+    .home_wrapper
+      /.images#images
+      / = image_tag 'disc1.png', :alt => '1', :id => "image_about", :style => "display:block;"
+      / = image_tag 'disc2.png', :id => "image_services", :alt => '2'
+      / = image_tag 'disc3.png', :id => "image_portfolio", :alt => '3'
+      / = image_tag 'disc4.png', :id => "image_contact", :alt => '4'
+
+      .circleBorder
+        %article#about-the-feel
+          the-feel is a web design and photography company based in North London and founded by former teacher and then IT Manager/Director 
+          Eric Waring.<br /><br /> the-feel delivers high-end, bespoke, yet affordable web sites for the discerning client who requires something different
+          from the template driven, off the shelf designs which seem to abound. We particularly enjoy working with small businesses and creatives.
+          <br /><br />As well as web design we can offer IT consultancy, trouble shooting, database work, IT solution development (spreadsheets/automated processes)
+          and photography. Explore the site and get in touch  - we don't bite and are convinced that we can help improve your business:-)
+
+      .small_circle#circle_about
+        .description
+          %ul
+            %li= link_to 'the-feel', about_path
+            %li= link_to 'the-founder', "#"
+            %li= link_to 'the-cost', "#"
+
+      .circlePic#mover
+        = image_tag 'coloured_balls.png'
