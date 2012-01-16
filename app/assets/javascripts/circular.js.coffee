@@ -10,7 +10,8 @@ $ ->
     return if $circle.css("opacity") is "1"
     
     # change the image
-    $("#image_" + id).stop(true, true).fadeIn(650).siblings().not(this).fadeOut 650
+    $("#image_" + id).stop(true, true).fadeIn(1000).siblings().not(this).fadeOut 1000
+    
     
     # if there's a small circle already, remove it:
     # either animate it in circle or just fading out
