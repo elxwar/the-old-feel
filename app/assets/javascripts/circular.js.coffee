@@ -50,7 +50,7 @@ $ ->
     # alert ("#circle_" + id)
   
   # when page loads animate about section by default
-  move $("#about"), 2000, 2
+  move $("#about"), 900, 2
   $("#menu > a").mouseover ->
     $this = $(this)
     move $this, 600, 1

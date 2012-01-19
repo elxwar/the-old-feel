@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def the_founder
+  def about_founder
   end
 
   def the_cost
