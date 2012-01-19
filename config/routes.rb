@@ -6,10 +6,10 @@ Starter::Application.routes.draw do
   
   match 'about_founder' => 'pages#about_founder'
   
+  match 'about_cost' => 'pages#about_cost'
+  
   match 'contact' => 'pages#contact'
 
-
-  get "pages/the_cost"
 
   get "pages/web_services"
 

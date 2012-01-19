@@ -16,3 +16,11 @@
 
       .circlePic#mover
         = image_tag 'coloured_balls.png'
+
+      .abcirc
+        .description
+          %ul
+            %li About:
+            %li= link_to 'the-feel', about_path
+            %li= link_to 'the-founder', about_founder_path
+            %li= link_to 'the-cost', about_cost_path 

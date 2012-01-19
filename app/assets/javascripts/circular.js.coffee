@@ -5,7 +5,6 @@ $ ->
   move = ($elem, speed, turns) ->
     id = $elem.attr("id")
     $circle = $("#circle_" + id)
-    
     # if hover the same one then nothing happens
     return if $circle.css("opacity") is "1"
     
@@ -28,7 +27,7 @@ $ ->
             dir: -1
           )
           opacity: "0"
-        , 3000
+        , 3000    
       else
         $theCircle.stop().animate
           opacity: "0"

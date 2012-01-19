@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   def about_founder
   end
 
-  def the_cost
+  def about_cost
   end
 
   def web_services

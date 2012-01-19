@@ -1,5 +1,7 @@
 $(document).ready ->
   #hide mainContent (yield) before fading in
+  $(window).bind "unload", ->
+  
   $("#mainContent").css "display", "none"
   $("#mainContent").fadeIn(2000)
   
