@@ -1,0 +1,39 @@
+.row
+  .twelvecol.last
+    %header
+      %h1 the-feel : the-services 
+      
+.row#home_row
+  .twelvecol.last
+    .home_wrapper
+
+      .circleBorder
+        %article#services
+          the-feel are able to offer the following high end, bespoke services at competitive rates:<br /><br />
+          %ul
+            %li Web site development and design <br /><br />
+            %li IT consultancy <br /><br />
+            %li Data processing and database work <br /><br />
+            %li IT training and tutoring<br /><br />
+            %li Photography
+
+      .circlePic#mover
+        = image_tag 'coloured_balls.png'
+
+      .abcirc
+        .description.blur
+          %ul
+            %li Services:
+            %li= link_to 'web design', about_path
+            %li= link_to 'consultancy', about_founder_path
+            %li= link_to 'training', about_cost_path 
+            %li= link_to 'photography', about_cost_path 
+
+#hiddenBCS
+  Eric Waring<br />
+  = image_tag 'mbcs-logo-colour-small.jpg'
+  #smallText
+    Click below to visit the website of the<br /><br />
+  = link_to ('BCS, The Chartered Institute for IT'), 'http://www.bcs.org/', :class => 'floatbox'
+  <br />&nbsp;
+  
