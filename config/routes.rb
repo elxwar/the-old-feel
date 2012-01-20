@@ -9,6 +9,8 @@ Starter::Application.routes.draw do
   match 'about_cost' => 'pages#about_cost'
   
   match 'contact' => 'pages#contact'
+  
+  match 'services' => 'pages#services'
 
 
   get "pages/web_services"

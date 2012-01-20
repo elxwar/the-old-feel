@@ -32,7 +32,9 @@ body{
       width:420px;
       height:420px;
       background:transparent url('ringbg.png') no-repeat top left;
-      
+      a{
+        border-bottom-style:none;
+      }
     }
 
     .menu{

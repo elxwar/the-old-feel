@@ -1,7 +1,8 @@
 .row
   .twelvecol.last
     %header
-      %h1 the-founder - Eric Waring
+      %h1 the-founder - Eric Waring 
+      
 .row#home_row
   .twelvecol.last
     .home_wrapper
@@ -13,16 +14,26 @@
           <br /><br />This gives him a unique skill set perfectly 
           suited to web and business solution design: a deep understanding of your business needs, excellent communication skills and creativity.
           He also has a strong team of graphic designers backing him up.
-          <br /><br />He has degrees in Physics and Computing and is a member of the BCS.
+          <br /><br />He has degrees in Physics and Computing and is a member of the 
+          = link_to 'BCS', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#hiddenBCS"
           <br /><br /> In his 'spare' time he loves listening to alternative (noise!) music and photographing gigs.
 
       .circlePic#mover
         = image_tag 'coloured_balls.png'
 
       .abcirc
-        .description
+        .description.blur
           %ul
             %li About:
             %li= link_to 'the-feel', about_path
             %li= link_to 'the-founder', about_founder_path
             %li= link_to 'the-cost', about_cost_path 
+
+#hiddenBCS
+  Eric Waring<br />
+  = image_tag 'mbcs-logo-colour-small.jpg'
+  #smallText
+    Click below to visit the website of the<br /><br />
+  = link_to ('BCS, The Chartered Institute for IT'), 'http://www.bcs.org/', :class => 'floatbox'
+  <br />&nbsp;
+  
