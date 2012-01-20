@@ -20,34 +20,8 @@ html{background-color:#222;}
 $t_time:0.6s;
 $t_scalea:0.8;
 $t_scaleb:1;
-a{white-space:no-wrap;
-  text-decoration:none;
-  display:block;
-  text-align:center;
-  letter-spacing: 1px;
-  color:rgba(0,0,0,0);
-  text-shadow:0px 0px 5px rgba(245,245,245,0.5);
-  -moz-transform: scale($t_scalea);
-  -ms-transform: scale($t_scalea);
-  -o-transform: scale($t_scalea);
-  -webkit-transform: scale($t_scalea);
-  transform: scale($t_scalea);
-  -webkit-transition: all $t_time ease-in-out;
-  -moz-transition: all $t_time ease-in-out;
-  -o-transition: all $t_time ease-in-out;
-  -ms-transition: all $t_time ease-in-out;
-  transition: all $t_time ease-in-out;
-  &:hover{
-    color:rgba(245,245,245,0.8);
-    text-shadow: 0px 0px 1px #fff;
-/*          padding-left: 10px;*/
-    -moz-transform: scale($t_scaleb);
-    -ms-transform: scale($t_scaleb);
-    -o-transform: scale($t_scaleb);
-    -webkit-transform: scale($t_scaleb);
-    transform: scale($t_scaleb);
-  }
-}
+
+
 #the_wrapper{padding-top:0.5em;}
 .no-textshadow a{
   color:#555;
@@ -63,6 +37,17 @@ body{
   
   @include body_text;
   background-color:#222;
+  a{
+    text-decoration:none;
+    color:#980096;
+    border-bottom-style:dotted;
+    border-color:#980096;
+    border-width:thin;  
+    &:hover{
+      color:#2fa12b;
+      border-color:#2fa12b;
+    }
+  }
 /*  background-image: url('the-feel-large-background.jpg');*/
   nav{
     display:block;
@@ -71,6 +56,38 @@ body{
     @include title_text;
     text-align: left;
     line-height:1.5;
+  }
+  .blur{
+    a{
+      white-space:no-wrap;
+      text-decoration:none;
+      border-bottom-style:none;
+      display:block;
+      text-align:center;
+      letter-spacing: 1px;
+      color:rgba(0,0,0,0);
+      text-shadow:0px 0px 5px rgba(245,245,245,0.5);
+      -moz-transform: scale($t_scalea);
+      -ms-transform: scale($t_scalea);
+      -o-transform: scale($t_scalea);
+      -webkit-transform: scale($t_scalea);
+      transform: scale($t_scalea);
+      -webkit-transition: all $t_time ease-in-out;
+      -moz-transition: all $t_time ease-in-out;
+      -o-transition: all $t_time ease-in-out;
+      -ms-transition: all $t_time ease-in-out;
+      transition: all $t_time ease-in-out;
+      &:hover{
+        color:rgba(245,245,245,0.8);
+        text-shadow: 0px 0px 1px #fff;
+    /*          padding-left: 10px;*/
+        -moz-transform: scale($t_scaleb);
+        -ms-transform: scale($t_scaleb);
+        -o-transform: scale($t_scaleb);
+        -webkit-transform: scale($t_scaleb);
+        transform: scale($t_scaleb);
+      }
+    }
   }
   .bubble{opacity:0.1;}
   

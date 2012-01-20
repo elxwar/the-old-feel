@@ -10,35 +10,17 @@ fb.options = {
 // Use the configurator.html form in this folder to generate globalOptions preferences through form selections.
 
 globalOptions: {
-  licenseKey: "",          // Paste your license key between the quotes, or enter it in the configurator form.
-  showIE6EndOfLife: true,
-  showMagCursor: "yes",
-  endTask: "loop",
-  showNavOverlay: "yes",
-  controlsPos: "tl",
-  indexLinksPos: "bc",
-  itemNumberPos: "bc",
-  measureHTML: "yes",
+  licenseKey: "",  
   splitResize: "auto",
   cornerRadius: 20,
-  hideObjects: false,
-  titleAsCaption: false,
-  startPaused: true,
-  doSlideshow: true,
-  numIndexLinks: 9,
-  navOverlayWidth: 35,
+  closeOnNewWindow: true,
   showNewWindow: true,
   showItemNumber: false,
   showOuterClose: true,
-  showClose: false,
-  stickyDragMove: true,
-  centerNav: true,
+  mobileNewWindow:true,
   enableDragResize: true,
-  outerBorderColor: "#222",
-  overlayOpacity: 60,
-  innerBorder: 0,
-  outerBorder: 3,
-  width: '850px'
+  overlayOpacity: 60
+
 },
 
 // childOptions are preferences to be applied only to secondary floatboxes.
@@ -79,7 +61,7 @@ typeOptions: {
     silverlight: "",
     pdf: "width:80% height:95%",
   // tooltip settings can consist of tooltip-specific options in addition to the standard floatbox options
-  tooltip: ""
+  tooltip: "placement:top cornerRadius: 20"
 },
 
 // You can propogate settings to groups of anchors by assigning them a class

@@ -11,7 +11,10 @@ class PagesController < ApplicationController
 
   def about_cost
   end
-
+  
+  def services  
+  end
+  
   def web_services
   end
 
