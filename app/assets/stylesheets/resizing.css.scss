@@ -40,7 +40,12 @@ body {
 
 @media only screen and (max-width: 1023px) {
 
-  body {}
+  body {
+    font-size: 0.9em;
+    .circleBorder{line-height:1.5em;}
+    .content_wrapper{top:2em;}
+/*	line-height: 1em;*/
+	}
     
 }
 
@@ -71,21 +76,27 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
   
-/*  body {
-    .headerContainer{
-      @include title_text(0.8em);
-
-      .sevencol{
-        padding-top: 0;
-        text-align: left;
-        min-width: 0;
-      }
-    }
-  }*/
-
-  /*	.logo {
-          background: url(logo2x.jpg) no-repeat;
-          background-size: 212px 303px;
-      }*/
+body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	}
+	
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
 
 }
