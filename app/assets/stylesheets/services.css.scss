@@ -1,0 +1,65 @@
+body{
+  
+ 
+  article{
+        
+        width:70%;
+/*        height:70%;*/
+        font-size:1em;
+        text-align:center;
+        vertical-align:middle;
+        margin:6em 5em;
+        overflow:hidden;
+      }
+  
+  .abcirc{
+    margin-top:-6.7em;
+    margin-left:-6.7em;
+    width:180px;
+    height:180px;
+    position:absolute;
+    left:38em;
+    top:31em;
+    background:transparent url('ring.png') no-repeat top left;
+    z-index:10;
+    opacity:1;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    .blur {
+
+        .no-textshadow & a{
+          font-size:1.2em;
+        }
+
+        .no-csstransforms & a{font-size:0.7em}
+
+        a{
+          line-height:1.5em;
+          font-size:1.3em;
+          font-weight:bold;
+          color:#f5f5f5;
+          text-decoration:none;
+          opacity:0.8;
+          text-transform:lowercase;
+          text-shadow:1px 1px 1px #aaa;
+          &:hover{color:#f0f0f0; opacity:1;}
+        }
+          
+    }
+    .description{
+      width:120px;
+      margin:2.7em auto;
+      text-align:center;
+      ul{
+        list-style:none;
+      }
+    }
+  }
+  #smallText{font-size:0.75em;}
+  
+  #hiddenBCS{
+    color:#222;
+    display:none;
+    text-align:center;
+    margin:1em;
+  }
+}

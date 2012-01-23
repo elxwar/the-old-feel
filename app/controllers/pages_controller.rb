@@ -15,9 +15,18 @@ class PagesController < ApplicationController
   def services  
   end
   
-  def web_services
+  def services_web
   end
 
+  def services_consult
+  end
+  
+  def services_training
+  end
+  
+  def services_photo
+  end
+  
   def consultancy_services
   end
 

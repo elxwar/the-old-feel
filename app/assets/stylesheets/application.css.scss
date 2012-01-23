@@ -134,6 +134,11 @@ body{
       box-shadow: 10px 10px 34px 5px black;
       background-color: #262626;
       z-index:200;
+      article{
+        ul{
+          list-style:none;
+        }
+      }
   }
   
 

@@ -29,7 +29,7 @@
     #the_wrapper.container
       .row
         .twocol#sidebar
-          = image_tag 'logos/the-feel-web-logo1.png'
+          = image_tag 'logos/the-feel-web-logo1.png', :id => 'logo'
           %nav.bmenu.blur
             %ul
               %li.transit= link_to 'home', home_path
@@ -40,8 +40,11 @@
               %li.transit.submenu= link_to 'about the-cost', about_cost_path
             %ul
               %li= link_to 'services', services_path
+            %ul
               %li= link_to 'portfolio', home_path 
+            %ul
               %li= link_to 'concepts', home_path
+            %ul
               %li= link_to 'contact', contact_path
         .eightcol#mainContent
           =yield
