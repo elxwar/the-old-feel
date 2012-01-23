@@ -2,9 +2,10 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-$(document).ready ->
-  windowWidth = $(window).width()
-  hideSubMenu(windowWidth)
-  $(window).resize ->
-    windowWidth = $(window).width()
-    hideSubMenu(windowWidth)
+#$(document).ready ->
+#  $('.allsubmenu').animate width: 'toggle'
+#  windowWidth = $(window).width()
+#  hideSubMenu(windowWidth)
+#  $(window).resize ->
+#    windowWidth = $(window).width()
+#    hideSubMenu(windowWidth)

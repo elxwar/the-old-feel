@@ -113,7 +113,18 @@ body {
 body {
 	font-size: 16px;
 	-webkit-text-size-adjust: none;
-  #logo{max-width:70%;}
+  #sidebar{padding:0}
+    #logo{
+      max-height:8em;
+      max-width:70%;
+    }
+    .bmenu{padding:0;}
+    .blur{
+      ul{display:inline-block;}
+      a{
+        text-align:left;
+      }
+    }
 	}
 	
 	.row, body, .container {

@@ -35,11 +35,17 @@
               %li.transit= link_to 'home', home_path
             %ul.headera
               %li.transit= link_to 'about', about_path
-              %li.transit.submenu= link_to 'about the-feel', about_path
-              %li.transit.submenu= link_to 'about the-founder', about_founder_path
-              %li.transit.submenu= link_to 'about the-cost', about_cost_path
-            %ul
-              %li= link_to 'services', services_path
+              .allsubmenu
+                %li.transit.submenua= link_to 'about the-feel', about_path
+                %li.transit.submenua= link_to 'about the-founder', about_founder_path
+                %li.transit.submenua= link_to 'about the-cost', about_cost_path
+            %ul.headera
+              %li.transit= link_to 'services', services_path
+              .allsubmenu
+                %li.transit.submenu= link_to 'web design', services_web_path
+                %li.transit.submenu= link_to 'consultancy', services_consult_path
+                %li.transit.submenu= link_to 'training', services_training_path 
+                %li.transit.submenu= link_to 'photography', services_photo_path 
             %ul
               %li= link_to 'portfolio', home_path 
             %ul
@@ -49,4 +55,4 @@
         .eightcol#mainContent
           =yield
         .twocol.last
-
+  

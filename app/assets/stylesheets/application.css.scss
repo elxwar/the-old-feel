@@ -118,8 +118,15 @@ body{
       @include title_text(2em,400);
       display:block;
     }
-    .submenu{font-size:1.1em;}
-
+    .submenu, .submenua{
+      display:none;
+      font-size:1em;
+      line-height:1.3em;
+      white-space:nowrap;
+      text-align:right;
+      .highlit a{color:rgba(245,245,245,0.8);}
+    }
+    .allsubmenu{padding:0;margin:0;top:0;left:0;text-align:center;}
   }
  .circleBorder{
       position:absolute;
@@ -137,6 +144,23 @@ body{
       article{
         ul{
           list-style:none;
+        }
+        .articleblur{
+          @extend .blur;
+          .no-textshadow & a{
+            font-size:1.35em;
+            color:#980096;
+            &:hover{
+              color:#f5f5f5;
+              text-shadow: 0px 0px 1px #fff;
+            }
+          }
+          a{
+            font-size:1.3em;
+            text-shadow:0px 0px 5px rgba(152,0,150,0.5);
+            color:rgba(152,0,150,1);
+          }
+          
         }
       }
   }

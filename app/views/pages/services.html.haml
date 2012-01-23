@@ -9,8 +9,8 @@
 
       .circleBorder
         %article#services
-          the-feel are able to offer the following high quality, bespoke services at competitive rates, please click on the links for further details:<br /><br />
-          %ul
+          the-feel are able to offer the following high quality, bespoke services at competitive rates, please click on the links below for further details:<br /><br />
+          %ul.articleblur
             %li= link_to 'Web site development and design', services_web_path 
             %li= link_to 'IT consultancy', services_consult_path
             %li= link_to 'Data processing and database work',services_consult_path
@@ -27,10 +27,10 @@
         .description.blur
           %ul
             %li Services:
-            %li= link_to 'web design', about_path
-            %li= link_to 'consultancy', about_founder_path
-            %li= link_to 'training', about_cost_path 
-            %li= link_to 'photography', about_cost_path 
+            %li= link_to 'web design', services_web_path
+            %li= link_to 'consultancy', services_consult_path
+            %li= link_to 'training', services_training_path 
+            %li= link_to 'photography', services_photo_path 
 
 #hiddenBCS
   Eric Waring<br />
