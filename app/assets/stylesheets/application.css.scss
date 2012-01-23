@@ -23,14 +23,8 @@ $t_scaleb:1;
 
 
 #the_wrapper{padding-top:0.5em;}
-.no-textshadow a{
-  color:#555;
-  &:hover{
-    color:#fff;
-    text-shadow: 0px 0px 1px #fff;
-  }
-}
-.no-csstransforms a{font-size:0.8em}
+
+
 
 body{
 
@@ -48,16 +42,34 @@ body{
       border-color:#2fa12b;
     }
   }
+
 /*  background-image: url('the-feel-large-background.jpg');*/
   nav{
     display:block;
   }
+  .content_wrapper{
+    font-size: 0.8em;
+    width:600px;
+    height:600px;
+    position:relative;
+    top:4.5em;
+    left:8px;
+  }
+  
   h1{
     @include title_text;
     text-align: left;
     line-height:1.5;
   }
   .blur{
+    .no-textshadow & a{
+      color:#555;
+      &:hover{
+        color:#f5f5f5;
+        text-shadow: 0px 0px 1px #fff;
+      }
+    }
+    .no-csstransforms & a{font-size:0.8em}
     a{
       white-space:no-wrap;
       text-decoration:none;
@@ -68,7 +80,7 @@ body{
       color:rgba(0,0,0,0);
       text-shadow:0px 0px 5px rgba(245,245,245,0.5);
       -moz-transform: scale($t_scalea);
-      -ms-transform: scale($t_scalea);
+      -ms-transform: scale($t_scalea - 0.1);
       -o-transform: scale($t_scalea);
       -webkit-transform: scale($t_scalea);
       transform: scale($t_scalea);
@@ -80,9 +92,9 @@ body{
       &:hover{
         color:rgba(245,245,245,0.8);
         text-shadow: 0px 0px 1px #fff;
-    /*          padding-left: 10px;*/
+/*        padding-left: 10px;*/
         -moz-transform: scale($t_scaleb);
-        -ms-transform: scale($t_scaleb);
+        -ms-transform: scale($t_scaleb - 0.1);
         -o-transform: scale($t_scaleb);
         -webkit-transform: scale($t_scaleb);
         transform: scale($t_scaleb);
@@ -97,6 +109,7 @@ body{
     $t_scaleb:1;*/
     padding:3em 0 0 0;
     margin: 0 0 10px 10px;
+    line-height:3em;
     position:relative;
     ul{margin-bottom:0;}
     &:hover li a{text-shadow: 0px 0px 6px #fff;}
@@ -105,7 +118,7 @@ body{
       @include title_text(2em,400);
       display:block;
     }
-    .submenu{font-size:1.2em;}
+    .submenu{font-size:1.1em;}
 
   }
  .circleBorder{
@@ -121,17 +134,14 @@ body{
       box-shadow: 10px 10px 34px 5px black;
       background-color: #262626;
       z-index:200;
-/*      background-position: -6px -6px;
-      background:transparent url('ringbg.png') no-repeat top left;*/
-/*      padding: 8em 8em;*/
-      
-      
-      
-      
-      
-      
-/*      background:transparent url('ringbg.png') no-repeat top left;*/
-    }
-    
+      article{
+        ul{
+          list-style:none;
+        }
+      }
+  }
+  
+
+  
   
 }

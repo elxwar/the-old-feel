@@ -40,7 +40,12 @@ body {
 
 @media only screen and (max-width: 1023px) {
 
-  body {}
+  body {
+    font-size: 0.9em;
+    .circleBorder{line-height:1.5em;}
+    .content_wrapper{top:2em;}
+/*	line-height: 1em;*/
+	}
     
 }
 
@@ -50,7 +55,9 @@ body {
 /* ======================================================================= */
 @media only screen and (max-width: 900px) {
 
-  body {}
+  body {
+    #logo{min-height:8em;min-width:8em;}
+  }
     
 }
 
@@ -59,11 +66,43 @@ body {
 /* ======================================================================= */
 
 @media handheld, only screen and (max-width: 767px) {
-  body {}
+  body {
+    #sidebar{padding:0}
+    #logo{
+      max-height:8em;
+      max-width:70%;
+    }
+    .bmenu{padding:0;}
+    .blur{
+      ul{display:inline-block;}
+      a{
+        text-align:left;
+      }
+    }
+    
+    #mainContent{
+      padding:0;
+      header{
+        h1{
+          font-size:1.3em;
+          padding:0;
+        }
+      }
+    }
+    .content_wrapper{left:0;}
+    .home_wrapper{left:0;}
+  }
+  
     
 }
 
+/* very narrow!*/
 
+@media handheld, only screen and (max-width: 767px) {
+
+  
+  
+}
 
 /* ======================================================================= */
 /* ! Provide higher res assets for iPhone 4   */
@@ -71,21 +110,28 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) { 
   
-/*  body {
-    .headerContainer{
-      @include title_text(0.8em);
-
-      .sevencol{
-        padding-top: 0;
-        text-align: left;
-        min-width: 0;
-      }
-    }
-  }*/
-
-  /*	.logo {
-          background: url(logo2x.jpg) no-repeat;
-          background-size: 212px 303px;
-      }*/
+body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+  #logo{max-width:70%;}
+	}
+	
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
 
 }

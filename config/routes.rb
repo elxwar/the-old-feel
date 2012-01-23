@@ -11,13 +11,14 @@ Starter::Application.routes.draw do
   match 'contact' => 'pages#contact'
   
   match 'services' => 'pages#services'
+  
+  match 'services_web' => 'pages#services_web'
 
-
-  get "pages/web_services"
-
-  get "pages/consultancy_services"
-
-  get "pages/photography"
+  match 'services_consult' => 'pages#services_consult'
+  
+  match 'services_training' => 'pages#services_training'
+  
+  match 'services_photo' => 'pages#services_photo'
 
   get "pages/web_portfolio"
 
