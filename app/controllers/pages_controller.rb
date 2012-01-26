@@ -27,6 +27,9 @@ class PagesController < ApplicationController
   def services_photo
   end
   
+  def artificialdesigns
+  end
+  
   def consultancy_services
   end
 

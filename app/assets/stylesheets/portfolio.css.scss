@@ -34,14 +34,14 @@ body{
     box-shadow: 10px 10px 34px 5px black;
     background-color: #262626;
   }
-  #firstframe{
+  #frame1{
 
   }
-  #secondframe{
+  #frame2{
     margin-top:0;
 /*    z-index:100;*/
   }
-  #thirdframe{}
+  #frame3{}
   #bigframe{
     clear:left;
     width:$bigfwidth;
@@ -51,25 +51,25 @@ body{
 /*    margin-top:-30px;*/
     
   }
-  #fourthframe{
+  #frame4{
 
   }
-  #fifthframe{
+  #frame5{
     margin:$bfmargin;
     border:none;
     box-shadow:none;
     background-color:transparent;
   }
   
-  #sixthframe{
+  #frame6{
     margin:$bfmargin;
   }
   
-  #seventhframe{
+  #frame7{
     margin:$bfmargin;
   }
   
-  #eighthframe{
+  #frame8{
     margin:$bfmargin;
     border:none;
     box-shadow:none;

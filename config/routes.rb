@@ -1,5 +1,17 @@
 Starter::Application.routes.draw do
 
+#  get "webs/alliancepublishingpress"
+#
+#  get "webs/minnawaring"
+#
+#  get "webs/elspics"
+#
+#  get "webs/bluedrummusic"
+#
+#  get "webs/lifestylepix"
+#
+#  get "webs/artificialdesigns"
+
   match 'home' => 'pages#home'
   
   match 'about' => 'pages#about'
@@ -21,6 +33,11 @@ Starter::Application.routes.draw do
   match 'services_photo' => 'pages#services_photo'
   
   match 'portfolio' => 'pages#portfolio'
+  
+  match 'artificialdesigns' => 'webs#artificialdesigns'
+  
+  match 'alliancepublishingpress' => 'webs#alliancepublishingpress'
+ 
 
   get "pages/web_portfolio"
 

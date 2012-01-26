@@ -2,7 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-#$(document).ready ->
+$(document).ready ->
+  webPortfolio()
 #  $('.allsubmenu').animate width: 'toggle'
 #  windowWidth = $(window).width()
 #  hideSubMenu(windowWidth)
