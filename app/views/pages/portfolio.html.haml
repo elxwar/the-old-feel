@@ -5,28 +5,35 @@
       
 .row#home_row
   .twelvecol.last
+    <br />click on the circles to see some of the websites we have developed:
     .content_wrapper#portfolioframe
       .frame.smallframe#frame1 
-        =image_tag 'webPortfolio/ArtificialDesigns.png', :title => 'www.artificialdesigns.co.uk'
+        =link_to (image_tag 'webPortfolio/ArtificialDesigns.png', :title => 'www.artificialdesigns.co.uk', :alt => 'Artificial Designs - David Apps Photography'), 'http://www.artificialdesigns.co.uk/', :target => '_blank'
       .frame.smallframe#frame2
-        =image_tag 'webPortfolio/AlliancePublishingPress.png', :title => 'www.alliancepublishingpress.com'
+        =link_to (image_tag 'webPortfolio/AlliancePublishingPress.png', :title => 'www.alliancepublishingpress.com', :alt => 'Alliance Publishing Press Ltd'), 'http://www.alliancepublishingpress.com/', :target => '_blank'
       .frame.smallframe#frame3
-        =image_tag 'webPortfolio/bluedrummusic.png', :title => 'www.bluedrummusic.com'
+        =link_to (image_tag 'webPortfolio/bluedrummusic.png', :title => 'www.bluedrummusic.com', :alt => 'blue drum music'), 'http://www.bluedrummusic.com/', :target => '_blank'
       .frame.smallframe#frame4
-        =image_tag 'webPortfolio/lifestylepix.png', :title => 'www.lifestylepix.co.uk'
+        =link_to (image_tag 'webPortfolio/lifestylepix.png', :title => 'www.lifestylepix.co.uk', :alt => 'Lifestylepix photography'), 'http://www.lifestylepix.co.uk/', :target => '_blank'
 
       .frame#bigframe
-        #innerframe=render 'webs/artificialdesigns'
+        .innerframe#innerframe
+          =link_to (image_tag 'webPortfolio/ArtificialDesignslrg.png', :id => 'image1', :title => 'www.artificialdesigns.co.uk', :alt => 'Artificial Designs - David Apps Photography'), 'http://www.artificialdesigns.co.uk/', :target => '_blank'
+          =link_to (image_tag 'webPortfolio/AlliancePublishingPresslrg.png', :id => 'image2', :title => 'www.alliancepublishingpress.com', :alt => 'Alliance Publishing Press Ltd'), 'http://www.alliancepublishingpress.com/', :target => '_blank'
+          =link_to (image_tag 'webPortfolio/bluedrummusiclrg.png', :id => 'image3', :title => 'www.bluedrummusic.com', :alt => 'blue drum music'), 'http://www.bluedrummusic.com/', :target => '_blank'
+          =link_to (image_tag 'webPortfolio/lifestylepixlrg.png', :id => 'image4', :title => 'www.lifestylepix.co.uk', :alt => 'Lifestylepix photography'), 'http://www.lifestylepix.co.uk/', :target => '_blank'
+          =link_to (image_tag 'webPortfolio/minnawaringlrg.png', :id => 'image6', :title => 'www.minnawaring.com', :alt => 'Minna Waring Photography'), 'http://www.minnawaring.com/', :target => '_blank'
+          =link_to (image_tag 'webPortfolio/ELSPICSlrg.png', :id => 'image7', :title => 'www.elspics.co.uk', :alt => 'Elspics Photography'), 'http://www.elspics.co.uk/', :target => '_blank'
 
       .frame.smallframe#frame5
         .fcontent 
           &nbsp;
 
       .frame.smallframe#frame6
-        =image_tag 'webPortfolio/minnawaring.png', :title => 'www.minnawaring.com'
+        =link_to (image_tag 'webPortfolio/minnawaring.png', :title => 'www.minnawaring.com', :alt => 'Minna Waring Photography'), 'http://www.minnawaring.com/', :target => '_blank'
 
       .frame.smallframe#frame7
-        =image_tag 'webPortfolio/ELSPICS.png', :title => 'www.elspics.co.uk'
+        =link_to (image_tag 'webPortfolio/ELSPICS.png', :title => 'www.elspics.co.uk', :alt => 'Elspics Photography'), 'http://www.elspics.co.uk/', :target => '_blank'
 
       .frame.smallframe#frame8
         .fcontent 
