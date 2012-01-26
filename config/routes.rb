@@ -19,6 +19,8 @@ Starter::Application.routes.draw do
   match 'services_training' => 'pages#services_training'
   
   match 'services_photo' => 'pages#services_photo'
+  
+  match 'portfolio' => 'pages#portfolio'
 
   get "pages/web_portfolio"
 

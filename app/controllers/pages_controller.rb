@@ -33,7 +33,7 @@ class PagesController < ApplicationController
   def photography
   end
 
-  def web_portfolio
+  def portfolio
   end
 
   def photo_portfolio

@@ -18,17 +18,18 @@ Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 
 html{background-color:#222;}
 $t_time:0.6s;
-$t_scalea:0.8;
+$t_scalea:0.85;
 $t_scaleb:1;
+$cont_wrap_width: 600px;
 
 
-#the_wrapper{padding-top:0.5em;}
+
 
 
 
 body{
 
-  
+  #the_wrapper{padding-top:0.5em; }
   @include body_text;
   background-color:#222;
   a{
@@ -45,12 +46,14 @@ body{
 
 /*  background-image: url('the-feel-large-background.jpg');*/
   nav{
+    
     display:block;
+    
   }
   .content_wrapper{
     font-size: 0.8em;
-    width:600px;
-    height:600px;
+    width:$cont_wrap_width;
+    height:$cont_wrap_width;
     position:relative;
     top:4.5em;
     left:8px;
@@ -71,12 +74,13 @@ body{
     }
     .no-csstransforms & a{font-size:0.8em}
     a{
+      @include body_text;
       white-space:no-wrap;
       text-decoration:none;
       border-bottom-style:none;
       display:block;
       text-align:center;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
       color:rgba(0,0,0,0);
       text-shadow:0px 0px 5px rgba(245,245,245,0.5);
       -moz-transform: scale($t_scalea);
@@ -141,7 +145,15 @@ body{
       box-shadow: 10px 10px 34px 5px black;
       background-color: #262626;
       z-index:200;
+
       article{
+        width:70%;
+/*        height:70%;*/
+        font-size:1em;
+        text-align:center;
+        vertical-align:middle;
+        margin:6em 5em;
+        overflow:hidden;
         ul{
           list-style:none;
         }

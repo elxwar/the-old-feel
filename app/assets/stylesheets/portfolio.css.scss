@@ -1,0 +1,88 @@
+@import "./partials/font_families";
+body{
+  #portfolioframe{
+    position:relative;
+    top:0em;
+    left:0em;
+/*    width:100%;
+    height: 100%;*/
+    height:660px;
+    padding:0.6em;
+    vertical-align:middle;
+  }
+  $fwidth: 140px;
+  $fheight: $fwidth;
+  $tfmargin: 0px (148-$fwidth)/2 0px;
+  $bigfwidth: 360px;
+  $bigfheight: $bigfwidth;
+  $bigfmargin: -20px (598-$bigfwidth)/2;
+  $bfmargin: $tfmargin;
+/*  $bfmargin: -10px (298-$fwidth)/2 0;*/
+  
+  .frame{
+    position:relative;
+/*    top:20px;*/
+    float:left;
+    width:$fwidth;
+    height:$fheight;
+    margin: $tfmargin;
+    z-index:100;
+    border-radius: 50%;
+    border:solid;
+    border-color:#f5f5f5;
+    border-width:thin;
+    box-shadow: 10px 10px 34px 5px black;
+    background-color: #262626;
+  }
+  #firstframe{
+
+  }
+  #secondframe{
+    margin-top:0;
+/*    z-index:100;*/
+  }
+  #thirdframe{}
+  #bigframe{
+    clear:left;
+    width:$bigfwidth;
+    height:$bigfheight;
+    margin:$bigfmargin;
+    z-index:50;
+/*    margin-top:-30px;*/
+    
+  }
+  #fourthframe{
+
+  }
+  #fifthframe{
+    margin:$bfmargin;
+    border:none;
+    box-shadow:none;
+    background-color:transparent;
+  }
+  
+  #sixthframe{
+    margin:$bfmargin;
+  }
+  
+  #seventhframe{
+    margin:$bfmargin;
+  }
+  
+  #eighthframe{
+    margin:$bfmargin;
+    border:none;
+    box-shadow:none;
+    background-color:transparent;
+  }
+  .fcontent{
+    @include body_text;
+    width:70%;
+/*        height:70%;*/
+/*    font-size:1em;*/
+    text-align:left;
+    vertical-align:middle;
+    margin:60px;
+    overflow:hidden;
+  }
+}
