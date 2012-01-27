@@ -13,11 +13,11 @@ root.webPortfolio = ->
     $('[id^="frame"]').hoverIntent (->
       id = this.id.replace("frame","")
       #$('#frame' + id)
-      #console.log(id)
+      console.log(id)
 #      $('[id^="image"]').fadeOut('3000')
 #      $('#image' + id).fadeIn('4000')
       $("#image" + id).stop(true, true)
-      $('[id^="image"]').fadeOut 2000
+      $('[id^="image"]').not('#image'+id).fadeOut 2000
       $("#image" + id).fadeIn(2000)
 #      $('[id^="image"]').fadeOut 2000
 #      $('#innerframe').html("<img src='assets/webPortfolio/AlliancePublishingPresslrg.png'>")

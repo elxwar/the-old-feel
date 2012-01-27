@@ -8,9 +8,13 @@
     <br />click on the circles to see some of the websites we have developed:
     .content_wrapper#portfolioframe
       .frame.smallframe#frame1 
-        =link_to (image_tag 'webPortfolio/ArtificialDesigns.png', :title => 'www.artificialdesigns.co.uk', :alt => 'Artificial Designs - David Apps Photography'), 'http://www.artificialdesigns.co.uk/', :target => '_blank'
+        =link_to (image_tag 'webPortfolio/ArtificialDesigns.png', :title => 'www.artificialdesigns.co.uk', :alt => 'Artificial Designs - David Apps Photography'), |
+        'http://www.artificialdesigns.co.uk/', :target => '_blank', :class => 'fbTooltip', |
+        :'data-fb-tooltip' => "source:'#hidden1' attachToHost:true placement:bottom colorTheme:custom boxColor:#222 innerBorderColor:#555 outerBorderColor:#555 contentBackgroundColor:#222"
       .frame.smallframe#frame2
-        =link_to (image_tag 'webPortfolio/AlliancePublishingPress.png', :title => 'www.alliancepublishingpress.com', :alt => 'Alliance Publishing Press Ltd'), 'http://www.alliancepublishingpress.com/', :target => '_blank'
+        =link_to (image_tag 'webPortfolio/AlliancePublishingPress.png', :title => 'www.alliancepublishingpress.com', :alt => 'Alliance Publishing Press Ltd'), |
+        'http://www.alliancepublishingpress.com/', :target => '_blank', :class => 'fbTooltip', |
+        :'data-fb-tooltip' => "source:'#hidden2' attachToHost:true placement:bottom colorTheme:custom boxColor:#222 innerBorderColor:#555 outerBorderColor:#555 contentBackgroundColor:#222"
       .frame.smallframe#frame3
         =link_to (image_tag 'webPortfolio/bluedrummusic.png', :title => 'www.bluedrummusic.com', :alt => 'blue drum music'), 'http://www.bluedrummusic.com/', :target => '_blank'
       .frame.smallframe#frame4
@@ -47,6 +51,10 @@
       /      %li= link_to 'consultancy', services_consult_path
       /      %li= link_to 'training', services_training_path 
       /      %li= link_to 'photography', services_photo_path 
-
+#tooltips
+  #hidden1
+    David Apps<br />Photography & Design
+  #hidden2
+    Alliance Publishing Press
 
   

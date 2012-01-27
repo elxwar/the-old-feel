@@ -34,9 +34,20 @@ body{
     box-shadow: 10px 10px 34px 5px black;
     background-color: #262626;
     a {border: none;}
+    
+  }
+  $opac: 0.5;
+  .smallframe{
+    -moz-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    -webkit-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    -ms-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    -o-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    box-shadow:0px 0px 80px rgba(240,240,240,$opac);
   }
   #frame1{
-
+    
+      
+    
   }
   #frame2{
     margin-top:0;
@@ -44,6 +55,11 @@ body{
   }
   #frame3{}
   #bigframe{
+    -moz-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    -webkit-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    -ms-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    -o-box-shadow:0px 0px 80px rgba(240,240,240,$opac);
+    box-shadow:0px 0px 80px rgba(240,240,240,$opac);
     clear:left;
     width:$bigfwidth;
     height:$bigfheight;
@@ -95,4 +111,5 @@ body{
     margin:60px;
     overflow:hidden;
   }
+  #tooltips{display:none;text-align:center;}
 }
