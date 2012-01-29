@@ -19,6 +19,7 @@ globalOptions: {
   showOuterClose: true,
   mobileNewWindow:true,
   enableDragResize: true,
+  resizeDuration: 2.5,
   overlayOpacity: 60
 
 },

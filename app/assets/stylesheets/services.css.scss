@@ -67,4 +67,21 @@ body{
     text-align:center;
     margin:1em;
   }
+  .hidden_elements{
+    
+    display:none;
+    text-align:center;
+    color:#222;
+    font-size:0.7em;
+    margin:0;
+  }
+  #USP{@extend .hidden_elements;}
+  #HTMLinfo{@extend .hidden_elements;}
+  #cssinfo{@extend .hidden_elements;}
+  #jsinfo{@extend .hidden_elements;}
+  #jqinfo{@extend .hidden_elements;}
+  #ajinfo{@extend .hidden_elements;}
+  #mysqlinfo{@extend .hidden_elements;}
+  #rorinfo{@extend .hidden_elements;}
+  
 }

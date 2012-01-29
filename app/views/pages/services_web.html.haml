@@ -10,12 +10,28 @@
         %article#about-the-feel
           With our extensive business experience we are able to understand your requirements and work closely with you to produce a site which 
           expresses your individuality and 
-          =link_to 'USP', '#' 
+          =link_to 'USP', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#USP innerBorder:0 fadeDuration:4 mouseSpeed:30 attachToHost:true placement:top"
           whilst maintaining <br />useability for your visitors.<br /><br />
           We use cutting edge web technology to develop bespoke websites using the latest techniques to be found - including some yet to be discovered!<br /><br />
-          Technologies we use include HTML5, CSS3, JavaScript, jQuery, MySQL and Ruby on Rails, <br />together ensuring compatibility across the board.<br /><br />
+          Technologies we use include 
+          =link_to 'HTML5', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#HTMLinfo innerBorder:0 fadeDuration:4 maxContentWidth:300 mouseSpeed:30 attachToHost:true placement:top"
+          , 
+          =link_to 'CSS3', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#cssinfo innerBorder:0 fadeDuration:4 maxContentWidth:300 mouseSpeed:30 attachToHost:true placement:top"
+          , 
+          =link_to 'JavaScript', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#jsinfo innerBorder:0 fadeDuration:4 maxContentWidth:300 mouseSpeed:30 attachToHost:true placement:top"
+          , 
+          =link_to 'jQuery', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#jqinfo innerBorder:0 fadeDuration:4 maxContentWidth:300 mouseSpeed:30 attachToHost:true placement:top"
+          , 
+          =link_to 'Ajax', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#ajinfo innerBorder:0 fadeDuration:4 maxContentWidth:300 mouseSpeed:30 attachToHost:true placement:top"
+          , 
+          =link_to 'MySQL', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#mysqlinfo innerBorder:0 fadeDuration:4 maxContentWidth:300 mouseSpeed:30 attachToHost:true placement:top"
+          and 
+          =link_to 'Ruby on Rails', '#', :class => 'fbTooltip', :'data-fb-tooltip' => "source:#rorinfo innerBorder:0 fadeDuration:4 maxContentWidth:300 mouseSpeed:30 attachToHost:true placement:top"
+          , together ensuring compatibility across the board.<br /><br />
           All our sites are SEO optimised and we can also offer web hosting and email with the first year free.<br />
-          Get in touch to discuss your needs.
+          Get in 
+          =mail_to 'ericw@the-feel.co.uk', 'touch', :subject => 'Web Site Enquiry'
+          to discuss your needs.
 
       .circlePic#mover
         = image_tag 'coloured_balls.png'
@@ -28,3 +44,48 @@
             %li= link_to 'consultancy', services_consult_path
             %li= link_to 'training', services_training_path 
             %li= link_to 'photography', services_photo_path 
+
+.hidden_elements
+  #USP
+    Unique Selling Point
+  #HTMLinfo
+    =link_to 'HTML5', 'http://www.webopedia.com/TERM/H/HTML5.html', :class => 'floatbox' 
+    <br />HTML5 is the latest version of the HyperText Markup Language which is used for writing web pages. It has support for 
+    media such as video and audio built in so does not need to rely on extras like Adobe Flash. Apple have chosen to use 
+    HTML5 and not support Flash in iPhones and iTabs. Animations can also be developed directly in it although browser 
+    support can be patchy at present.
+  #cssinfo
+    =link_to 'CSS3', 'http://en.wikipedia.org/wiki/CSS3#CSS3' , :class => 'floatbox'
+    <br />CSS3 is the third revision of the Cascading Style Sheet language which is used to define the appearance of a web 
+    page. As well as basic formatting CSS3 includes the ability to use multiple backgrounds, gradients, shadows, blurring 
+    and simple animations (transitions). Again browser support is varied but improving….
+  #jsinfo
+    =link_to 'JavaScript', 'http://www.webopedia.com/TERM/J/JavaScript.html' , :class => 'floatbox'
+    <br />A scripting language which allows developers to build interactive sites – ones which respond to user input, 
+    mouse movements, clicks, finger swipes etc. It can even change the HTML code on the page to update parts of it 
+    according to user choices – this is often used with Ajax.
+  #jqinfo
+    =link_to 'jQuery', 'http://www.webopedia.com/TERM/J/jQuery.html' , :class => 'floatbox'
+    <br />jQuery is a JavaScript library giving developers easy access to the components of a web page and their events. 
+    It simplifies the programming of complex animations and Ajax interactions.
+
+  #ajinfo
+    =link_to 'Ajax', 'http://www.webopedia.com/TERM/A/Ajax.html' , :class => 'floatbox'
+    <br />Combined with JavaScript or jQuery Ajax allows just parts of the web page to be updated without reloading the 
+    entire page. This is often combined with a request sent to the server to retrieve data from a database with the 
+    response being updated on the web page.
+  
+  #mysqlinfo
+    =link_to 'MySQL', 'http://www.webopedia.com/TERM/M/MySQL.html' , :class => 'floatbox'
+    <br />MySQL is a free, open source relational database program used to store and query large amounts of data. 
+    Typically used in web applications to securely store user and product details including shopping baskets, order 
+    histories etc. 
+  
+  #rorinfo
+    =link_to 'Ruby on Rails', 'http://www.webopedia.com/TERM/R/Ruby_on_Rails.html' , :class => 'floatbox'
+    <br />Rails is an open source web application framework which uses all the above mentioned technologies to develop 
+    robust, database driven web sites/applications. It also allows us to build a CMS (Content Management System) directly 
+    into the site.  Massive sites such as Twitter, Yell.com, shopify, groupon, blurb… are built on Rails showing its power 
+    and extensibility.
+  
+ 
