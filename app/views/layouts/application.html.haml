@@ -29,7 +29,7 @@
     #the_wrapper.container
       .row
         .twocol#sidebar
-          = image_tag 'logos/the-feel-web-logo1.png', :id => 'logo'
+          = link_to (image_tag 'logos/the-feel-web-logo1.png', :id => 'logo'), home_path, :id => 'logoa'
           %nav.bmenu.blur
             %ul
               %li.transit= link_to 'home', home_path

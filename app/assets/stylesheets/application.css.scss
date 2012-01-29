@@ -32,6 +32,7 @@ body{
   #the_wrapper{padding-top:0.5em; }
   @include body_text;
   background-color:#222;
+  #logoa{border-bottom-style:none;text-decoration:none;}
   a{
     text-decoration:none;
     color:#980096;
@@ -43,7 +44,7 @@ body{
       border-color:#2fa12b;
     }
   }
-
+  
 /*  background-image: url('the-feel-large-background.jpg');*/
   nav{
     
@@ -57,6 +58,7 @@ body{
     position:relative;
     top:4.5em;
     left:8px;
+    
   }
   
   h1{
