@@ -10,7 +10,7 @@ fb.options = {
 // Use the configurator.html form in this folder to generate globalOptions preferences through form selections.
 
 globalOptions: {
-  licenseKey: "",  
+  licenseKey: "wFf9wVm2y5HM",  
   splitResize: "auto",
   cornerRadius: 20,
   closeOnNewWindow: true,

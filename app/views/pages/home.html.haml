@@ -13,37 +13,40 @@
 
       .circleBig
         #menu.menu
-          = link_to 'about', '', :class => 'about', :id => 'about' 
-          = link_to 'services', '', :class => 'services', :id => 'services'
-          = link_to 'portfolio', '', :class => 'portfolio', :id => 'portfolio'
-          = link_to 'contact', '', :class => 'contact', :id => 'contact'
+          = link_to 'about', about_path, :class => 'about', :id => 'about' 
+          = link_to 'services', services_path, :class => 'services', :id => 'services'
+          = link_to 'portfolio', portfolio_path, :class => 'portfolio', :id => 'portfolio'
+          = link_to 'contact', contact_path, :class => 'contact', :id => 'contact'
 
       .small_circle#circle_about
         .description.blur
           %ul
+            <br />
             %li= link_to 'the-feel', about_path
             %li= link_to 'the-founder', about_founder_path
-            %li= link_to 'the-cost', "#"
+            /%li= link_to 'the-cost', "#"
 
       .small_circle#circle_services
         .description.blur
           %ul
-            %li= link_to 'web', "#"
-            %li= link_to 'consultancy', "#"
-            %li= link_to 'photography', "#"
+            %li= link_to 'web', services_web_path
+            %li= link_to 'consultancy', services_consult_path
+            %li= link_to 'photography', services_photo_path
 
       .small_circle#circle_portfolio
         .description.blur
           %ul
-            %li= link_to 'web sites', "#"
-            %li= link_to 'photography', "#"
+            <br />
+            %li= link_to 'web sites', portfolio_path
+            /%li= link_to 'photography', services_photography_path
 
       .small_circle#circle_contact
         .description.blur
           %ul
-            %li= link_to 'the-feel', "#"
-            %li= link_to 'other sites', "#"
-            %li= link_to 'links', "#"
+            <br />
+            %li= link_to 'the-feel', contact_path
+            %li= link_to 'other sites', portfolio_path
+            /%li= link_to 'links', "#"
 
     #home_intro
       the-feel offer high quality, bespoke web design, IT consultancy, data services and photography for small businesses. Your one-stop shop for all your IT needs! 
